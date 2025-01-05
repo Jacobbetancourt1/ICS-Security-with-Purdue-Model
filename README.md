@@ -101,12 +101,32 @@ Communicates with:
 
 ### 4. Minor Enforcement Boundary
 **Description**:  
-A smaller barrier between Level 3 (site-wide systems) and the lower process levels (Level 2 and below).  
-- **Focus**: Restrict unnecessary communication and reduce risks of lateral movement.
+The minor enforcement boundary separates **Level 3 (Site-Wide Supervisory)** from **Level 2 and below (Processes and Local Control)**. Its purpose is to provide basic segmentation and restrict unnecessary communication, but it is not the primary focus for heavy security measures.
 
-**Recommended Devices**:
-- **Routers or Switches with ACLs**: Enforces segmentation.
-- **Firewalls**: For environments with stricter requirements.
+**Key Principles**:
+- Keep security configurations simple and focused.
+- Apply lightweight controls (e.g., ACLs) to restrict communication between levels.
+- Minimize time spent here so resources can focus on major enforcement boundaries.
+
+**Recommended Actions**:
+1. **Apply Basic ACLs**:
+   - Block unnecessary traffic between Level 3 and Level 2 while allowing essential communications (e.g., SCADA to PLC traffic).
+   - Example ACL Rules:
+     - Allow traffic from SCADA systems to specific PLCs only on required ports (e.g., TCP 502 for Modbus).
+     - Deny all other traffic to Level 2 devices by default.
+
+2. **Ensure Protocol Restrictions**:
+   - Allow only OT protocols (e.g., Modbus, OPC UA) and block IT protocols like SMB or HTTP unless required for specific operations.
+
+3. **Avoid Over-Engineering**:
+   - The goal is not to create complex configurations here. A few targeted ACLs or rules are sufficient.
+
+**Focus Area**:
+- The minor enforcement boundary is not where most security resources should be spent. Instead, focus on securing **major enforcement boundaries** (e.g., DMZs) where the highest risks exist.
+
+**Why It’s Important**:
+- Provides a lightweight layer of segmentation to reduce risks of unnecessary communication or accidental disruptions.
+- Saves resources and time for addressing critical security risks at major enforcement boundaries.
 
 ---
 
