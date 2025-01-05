@@ -181,3 +181,13 @@ This design can serve as a baseline for implementing a secure ICS environment. F
 
 ---
 
+## 🌟 Future Improvements
+- Secure vendor remote access to Level 3 systems with enhanced configurations.
+- I want to learn how to simulate traffic flows within the ICS DMZ to demonstrate enforcement boundaries in action.
+- Add detailed use cases for safety system isolation (Level 0).
+- I want to learn how to include a broader analysis of OT network monitoring tools beyond GRASSMARLIN.
+
+---
+
+## 💡 Final Touch
+This project reflects my ongoing commitment to mastering ICS/OT cybersecurity and contributing to secure industrial environments.
