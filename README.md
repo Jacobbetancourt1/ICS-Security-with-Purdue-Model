@@ -32,6 +32,14 @@ Business tools (e.g., ERP systems) query operational data (e.g., production repo
 - **Endpoint Protection**: Prevents malware on enterprise devices.
 - **Active Directory (Optional)**: For centralized authentication, replicated to OT if needed.
 
+⚠️ **Caution**: Extending enterprise AD into OT can introduce risks, such as:
+1. Shared attack surfaces between IT and OT.
+2. Misconfigured access controls leading to over-permissioned OT access.
+
+**Mitigation**:
+- Use a dedicated AD instance or a read-only proxy for OT systems.
+- Apply strict trust configurations and RBAC to limit access.
+
 ---
 
 ### 2. ICS DMZ
