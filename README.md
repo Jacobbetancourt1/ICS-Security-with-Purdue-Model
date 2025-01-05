@@ -15,7 +15,7 @@ This architecture focuses on:
 ---
 <p align="center">
 <br/>
-<img src="https://imgur.com/36cH4eD.png" height="80%" width="80%" alt="GIT SSH ACCESS"/>
+<img src="https://imgur.com/36cH4eD.png" height="90%" width="90%" alt="Purdue Model Architecture"/>
 </p>
 
 *The diagram above illustrates the Purdue Model for ICS security, highlighting segmentation and enforcement boundaries to protect critical OT assets.*
