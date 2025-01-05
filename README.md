@@ -16,7 +16,9 @@ This architecture focuses on:
 <p align="center">
 <br/>
 <img src="https://imgur.com/36cH4eD.png" height="80%" width="80%" alt="GIT SSH ACCESS"/>
+</p>
 
+*The diagram above illustrates the Purdue Model for ICS security, highlighting segmentation and enforcement boundaries to protect critical OT assets.*
 ## Diagram Breakdown
 
 ### 🏢 1. Purdue Level 4: Enterprise Zone
@@ -153,7 +155,7 @@ This architecture adheres to several core principles:
 2. **Minimal Access**: Traffic flows are tightly controlled, allowing only necessary communication.
 3. **Isolation of Critical Assets**: Ensures the safety and integrity of controllers and field devices.
 4. **Alignment with Standards**:
-   - **NIST SP 800-82**: Focus on secure ICS architecture.
+   - [**NIST SP 800-82**](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r2.pdf): Focus on secure ICS architecture.
    - **ISA/IEC 62443**: Emphasizes segmentation and secure zones.
    - **GICSP Key Concepts**: Strong enforcement boundaries, protocol mediation, and access control.
 
@@ -161,9 +163,21 @@ This architecture adheres to several core principles:
 
 ## Next Steps
 This design can serve as a baseline for implementing a secure ICS environment. For further insights:
-1. **Simulate**: Use virtual tools like OpenPLC and SCADA simulators to demonstrate traffic flows.
-2. **Enhance**: Add specific tools or configurations tailored to your environment.
-3. **Document**: Provide detailed logging and monitoring for real-world scenarios.
+1. **Simulate**: Use virtual tools to design and test ICS environments:
+   - [OpenPLC](https://www.openplcproject.com/): Simulate programmable logic controllers and test control logic.
+   - [SCADASim](https://github.com/cmu-sei/SCADASim): Practice monitoring and managing industrial processes.
+
+2. **Enhance**: Build on this architecture with additional tools:
+   - [Cisco Packet Tracer](https://www.netacad.com/courses/packet-tracer): Design and simulate network segmentation for OT environments.
+   - [GRASSMARLIN](https://github.com/nsacyber/GRASSMARLIN): Analyze and visualize OT networks for better segmentation and visibility.
+
+3. **Document**: Provide detailed logging and monitoring configurations for real-world scenarios:
+   - Log critical events (e.g., unauthorized access attempts).
+   - Document traffic flows and justify rules for enforcement boundaries.
+
+4. **Explore Standards**:
+   - [NIST SP 800-82](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r2.pdf): A U.S.-centric guide to securing ICS environments, emphasizing practical risk management and best practices.
+   - **ISA/IEC 62443**: A globally recognized set of standards focused on lifecycle security, segmentation, and stakeholder collaboration in industrial automation.
 
 ---
 
