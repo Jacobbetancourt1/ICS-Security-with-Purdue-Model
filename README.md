@@ -62,6 +62,19 @@ Allows only necessary traffic between Level 4 and Level 3, such as:
 - **Unidirectional Gateways**: Ensures one-way data flow from OT to enterprise.
 - **Application Gateways**: Handles protocol translation (e.g., OPC UA, MQTT).
 
+**Why These Devices Are Important**:
+1. **Firewalls**:  
+   - Firewalls act as the first layer of defense, filtering traffic entering or exiting the DMZ.  
+   - Example: A firewall might allow an enterprise dashboard to query an OT gateway but block all unsolicited traffic into Level 3.
+
+2. **Unidirectional Gateways**:  
+   - These devices enforce a **one-way flow** of data, ensuring that no commands or threats propagate back into OT systems.  
+   - Example: Alarm summaries or production metrics are sent from Level 3 to Level 4, but no Level 4 commands can affect Level 3 systems.
+
+3. **Application Gateways**:  
+   - Converts industrial protocols (e.g., OPC UA, Modbus) used by OT systems into formats readable by enterprise systems (e.g., HTTPS or JSON).  
+   - Example: A gateway securely translates SCADA status data into a format accessible by business analytics tools.
+
 ---
 
 ### 3. Purdue Level 3: Site-Wide Supervisory Zone
