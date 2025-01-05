@@ -19,7 +19,7 @@ This architecture focuses on:
 
 ## Diagram Breakdown
 
-### 1. Purdue Level 4: Enterprise Zone
+### 🏢 1. Purdue Level 4: Enterprise Zone
 **Description**:  
 The business-facing IT environment that includes systems like ERP, email, and business reporting tools. This zone interacts with OT systems indirectly via the ICS DMZ.  
 - **Key principle**: Enterprise systems **must not** directly access OT devices.
@@ -42,7 +42,7 @@ Business tools (e.g., ERP systems) query operational data (e.g., production repo
 
 ---
 
-### 2. ICS DMZ
+### 🛡️ 2. ICS DMZ
 **Description**:  
 A critical buffer between enterprise IT (Level 4) and operational OT (Level 3). The DMZ mediates traffic and enforces **segmentation** while ensuring secure communication.
 
@@ -77,7 +77,7 @@ Allows only necessary traffic between Level 4 and Level 3, such as:
 
 ---
 
-### 3. Purdue Level 3: Site-Wide Supervisory Zone
+### 💻 3. Purdue Level 3: Site-Wide Supervisory Zone
 **Description**:  
 Hosts systems critical for monitoring and managing OT processes:
 - SCADA: Supervises the entire process.
@@ -99,7 +99,7 @@ Communicates with:
 
 ---
 
-### 4. Minor Enforcement Boundary
+### 🧱 4. Minor Enforcement Boundary
 **Description**:  
 The minor enforcement boundary separates **Level 3 (Site-Wide Supervisory)** from **Level 2 and below (Processes and Local Control)**. Its purpose is to provide basic segmentation and restrict unnecessary communication, but it is not the primary focus for heavy security measures.
 
@@ -130,7 +130,7 @@ The minor enforcement boundary separates **Level 3 (Site-Wide Supervisory)** fro
 
 ---
 
-### 5. Process Zones (Levels 2, 1, 0)
+### ⚙️ 5. Process Zones (Levels 2, 1, 0)
 **Description**:  
 - **Level 2**: Local Supervisory Systems that monitor specific processes (e.g., a production line).
 - **Level 1**: Local Controllers (PLCs) that execute logic and control devices.
