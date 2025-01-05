@@ -190,4 +190,4 @@ This design can serve as a baseline for implementing a secure ICS environment. F
 ---
 
 ## 💡 Final Touch
-This project reflects my ongoing commitment to mastering ICS/OT cybersecurity and contributing to secure industrial environments.
+If you made it this far, thanks for reading! This project reflects my ongoing commitment to mastering ICS/OT cybersecurity and contributing to secure industrial environments.
