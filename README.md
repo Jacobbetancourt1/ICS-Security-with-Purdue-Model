@@ -10,7 +10,7 @@ This project showcases an **ICS security architecture** built around the Purdue 
 This architecture focuses on:
 1. **Segmentation**: Breaking the network into secure zones to limit lateral movement and confine potential breaches.
 2. **Enforcement Boundaries**: Implementing clear controls to regulate traffic between zones (e.g., DMZs).
-3. **Protection of Critical Assets**: Ensuring that the most sensitive systems—like controllers, sensors, and safety systems—are isolated and only accessible through secure, monitored channels.
+3. **Protection of Critical Assets**: Ensuring that the most sensitive systems like controllers, sensors, and safety systems are isolated and only accessible through secure, monitored channels.
 
 ---
 <p align="center">
