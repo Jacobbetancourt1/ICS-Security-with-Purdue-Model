@@ -39,7 +39,7 @@ Business tools (e.g., ERP systems) query operational data (e.g., production repo
 2. Misconfigured access controls leading to over-permissioned OT access.
 
 
-**Mitigation (If absolutely necessary)**:
+**Mitigation**:
 - Use a dedicated AD instance or a read-only proxy for OT systems.
 - Apply strict trust configurations and RBAC to limit access.
 
