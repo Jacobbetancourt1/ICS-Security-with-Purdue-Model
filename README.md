@@ -38,7 +38,8 @@ Business tools (e.g., ERP systems) query operational data (e.g., production repo
 1. Shared attack surfaces between IT and OT.
 2. Misconfigured access controls leading to over-permissioned OT access.
 
-**Mitigation**:
+
+**Mitigation (If absolutely necessary)**:
 - Use a dedicated AD instance or a read-only proxy for OT systems.
 - Apply strict trust configurations and RBAC to limit access.
 
