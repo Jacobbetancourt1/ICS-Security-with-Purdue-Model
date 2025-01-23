@@ -98,7 +98,7 @@ Communicates with:
 **Recommended Devices**:
 - **Firewalls or Layer-3 Switches**: For role-based segmentation.
 - **SIEM and IDS/IPS**: For visibility and anomaly detection.
-- **Patch Management Server**: Keeps OT systems updated securely.
+- **Patch Management Server**: Keeps OT systems updated securely. -> Some organizations prefer placing it in a DMZ (to reduce direct exposure of Level 3), while others keep it within Level 3 for easier distribution. The trade-off is stronger isolation vs. simpler architecture.
 
 ---
 
