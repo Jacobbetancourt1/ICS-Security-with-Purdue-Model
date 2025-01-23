@@ -40,7 +40,7 @@ Business tools (e.g., ERP systems) query operational data (e.g., production repo
 
 
 **Mitigation**:
-- Use a dedicated AD instance or a read-only proxy for OT systems.
+- Use a dedicated AD instance.
 - Apply strict trust configurations and RBAC to limit access.
 
 ---
