@@ -63,7 +63,7 @@ Allows only necessary traffic between Level 4 and Level 3, such as:
 **Recommended Devices**:
 - **Firewalls**: At each DMZ boundary to control and filter traffic.
 - **Unidirectional Gateways**: Ensures one-way data flow from OT to enterprise.
-- **Application Gateways**: Handles protocol translation (e.g., OPC UA, MQTT).
+- **Application Gateways**: Handles protocol translation (e.g., OPC UA).
 
 **Why These Devices Are Important**:
 1. **Firewalls**:  
